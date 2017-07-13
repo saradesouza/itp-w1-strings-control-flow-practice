@@ -24,7 +24,7 @@ def test_three_occurrences():
     # Positions:
     #         0                         26      34
     phrase = "Python is good. Python is Wise. I like Python"
-    assert positions(phrase, 'Python', 'Wise', 'like' ) == "0,26,34"
+    assert positions(phrase, 'Python', 'Wise', 'like') == "0,26,34"
 
 
 def test_two_occurrences_missing_third():
@@ -38,14 +38,14 @@ def test_two_occurrences_missing_first():
     # Positions:
     #         0                         26      34
     phrase = "Python is good. Python is Wise. I like Python"
-    assert positions(phrase, 'Ruby', 'Wise', 'like' ) == "-,26,34"
+    assert positions(phrase, 'Ruby', 'Wise', 'like') == "-,26,34"
 
 
 def test_one_occurrence_first_word():
     # Positions:
     #         0                         26      34
     phrase = "Python is good. Python is Wise. I like Python"
-    assert positions(phrase, 'Python', 'Javascript', 'Ruby' ) == "0,-,-"
+    assert positions(phrase, 'Python', 'Javascript', 'Ruby') == "0,-,-"
 
 
 def test_one_occurrence_second_word():
@@ -59,4 +59,4 @@ def test_one_occurrence_third_word():
     # Positions:
     #         0                         26      34
     phrase = "Python is good. Python is Wise. I like Python"
-    assert positions(phrase, 'Javscript', 'Ruby', 'Wise' ) == "-,-,26"
+    assert positions(phrase, 'Javscript', 'Ruby', 'Wise') == "-,-,26"
