@@ -29,3 +29,11 @@ $ py.test -v --tb=short group_project
 
 $ make test
 ```
+
+**Testing Python versions with TOX**
+
+```bash
+$ tox -epy27
+```
+
+![image](https://user-images.githubusercontent.com/872296/28190983-c13b11f0-67fb-11e7-93d2-c93f9f601072.png)
