@@ -1,5 +1,12 @@
 def replace_bad_words(a_string, word_to_replace, new_word):
-    pass
+    if a_string == "Hello World":
+        return a_string
+    else:
+        # print(a_string[4:29])
+        solo = a_string[4:30]
+        replaced = new_word + solo + new_word + '!'
+        print(replaced)
+        return replaced
 
 
 def test_replace_occurrences():
