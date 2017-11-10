@@ -20,6 +20,7 @@ def format_tic_tac_toe_board(first_row, second_row, third_row):
     c2 = third_row[1]
     c3 = third_row[2]
     
+    #FIRST ATTEMPT
     #so somehow I need to insert them like this
     #a1  |  a2  |  a3
     #--------------
@@ -38,12 +39,29 @@ def format_tic_tac_toe_board(first_row, second_row, third_row):
     
     #this actually makes a multiline in print!
     multilinehack = """
-    """
+"""
     #so I mash all the variables together
-    myboard = triplequote + multilinehack + line1 + multilinehack + line + multilinehack + line2 + multilinehack + line + multilinehack + line3 + multilinehack + triplequote
+    myboard = multilinehack + line1 + multilinehack + line + multilinehack + line2 + multilinehack + line + multilinehack + line3 + multilinehack
     
     print(myboard) #it looks like it prints perfectly!
-    return myboard #but it comes out as a mess as a result?!
+    return myboard #and now it works!
+    #END FIRST ATTEMPT
+
+    #SECOND ATTEMPT
+#     myboard = """
+# {}  |  {}  |  {}
+# --------------
+# {}  |  {}  |  {}
+# --------------
+# {}  |  {}  |  {}
+# """.format(a1,a2,a3,b1,b2,b3,c1,c2,c3)
+    
+#     print(myboard)
+#     # return myboard
+
+
+
+
 
 def test_format_board():
     """
